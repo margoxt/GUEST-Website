@@ -1,0 +1,852 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap");
+
+/*Basic Elements*/
+:root{
+    --dark-blue: #000366; --second-lightest-blue:#005083; --second-darkest-blue: #002347; --cyan-blue: #1C75A2; --background-blue: #005083;
+    --white:#F7F7F7; --gray: #F7F7F7; --light-gray: #dce2e9;--second-lightest-gray: #ECECF7; --third-lightest-gray: #E1E8ED;
+    --dark-orange:#FAAE6B; --lightest-orange: #FDE7D2; --second-lightest-orange: #F2F3F4; --normal-orange:#FFD1A9; --second-lightest-orange: #F4E3CF;
+} 
+body{
+    margin: 0; height: 100vh; padding: 0;
+}
+body.menu-open {
+    overflow: hidden; /* Prevent scrolling */
+}
+h1, h3{
+    font-family: "Inter", sans-serif; 
+    font-weight: bold; color: var(--dark-blue);
+}
+p, ul, li{
+    font-family: "Inter", sans-serif; font-size: 30px; 
+    line-height: 2; text-align: justify; text-justify: inter-word;
+}
+h2{
+    font-family: "Inknut Antiqua", serif; font-weight: bold; font-size: 40px;
+}
+/*----------------------END OF BASIC ELEMENTS----------------------*/
+
+
+
+
+/*Header CSS*/
+.header{
+    width: 100%; height: 100px; opacity: 90%; display: flex;
+    padding: 20px 10px; background-color: var(--white);
+    align-items: center; justify-content: space-between;
+    border-bottom: 5px solid black; 
+    
+    /*@Problem*/
+    z-index: 1000; position: relative;
+}
+
+.header-right{
+    float: right; padding-right: 50px;
+    display: flex; align-items: center;
+    z-index: 999;
+}
+
+.logo-container{
+    height: 100%; display: table; float: left;
+}
+
+.logo-container img{
+    height: 100px; width: 100px; top: 50px; border-radius: 50%;
+}
+
+.logo-container h1{
+    color: var(--dark-blue); height: 100%; 
+    display: table-cell; vertical-align: middle;
+    font-optical-sizing: auto; 
+    color: var(--dark-blue); padding-left: 20px;
+}
+
+.header-right a{
+    float: left; color: var(--dark-blue); text-align: center;
+    padding: 15px; text-decoration: none; font-size: 20px;
+    line-height: 75px; border-radius: 4px; 
+    font-family: "Inter", sans-serif; 
+}
+
+.header-right a:hover{
+    background-color: var(--dark-blue); color: var(--white);
+}
+
+/*--------------END OF HEADER----------------*/
+
+
+
+
+/*First Page: Welcome_CSS*/
+.home-container{padding: 50px 20px; margin-left: 20px; z-index: 1;}
+
+.tagline{
+    text-align: left; padding-top:30px;
+    background: transparent;
+    mix-blend-mode: color-burn;
+    text-shadow: 2px 2px black;
+    position: relative; line-height: 2;
+    z-index: 1;
+}
+.tagline h2{
+    font-size: 6rem; color: #034485;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+/*Get Started*/
+.getstarted{
+    padding: 10px 20px; background-color: var(--white);
+    border: none; border-radius: 50px; font-style: italic;
+    margin: 0; font-size: 2.5rem;
+    color: var(--dark-blue); cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: "Inter", sans-serif;
+}
+.getstarted:hover{
+    background-color: var(--dark-blue); color: var(--white);
+}
+/*--------------END OF WELCOME PAGE----------------*/
+
+
+
+
+/*Divider*/
+.divider{margin-top:100px;}
+.divider2{margin-top: 50px; overflow: auto;}
+.divider3{margin-top: 20px; padding-bottom: 100px;}
+.divider4{padding-bottom: 100px;}
+/*--------------END OF DIVIDER----------------*/
+
+
+
+
+/*Second Page: About US_CSS*/
+.box-image{
+    display: flex; padding-top: 100px;
+    justify-content: center; 
+    align-items: center;
+    height: auto; width: 100%;
+}
+.inner-box-image{
+    background-color: var(--lightest-orange); 
+    width: 100%; height: 25%;
+}
+.inner-box-image img{
+    display: flex; margin-left:auto; 
+    margin-right: auto; padding: 25px; 
+    width: 90%; height: 75%;
+}
+.center{
+    display: flex; margin-left: auto; margin-right: auto; 
+    width: 50%;
+}
+
+.center h3{ /*A.k.a Text*/
+    position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); font-size: 10vw; 
+    margin-top: 15%; line-height: 1.2; top: 275px;
+    mix-blend-mode: color-burn; background: transparent; 
+    text-shadow: 2px 2px black; word-wrap: break-word;
+}
+
+
+
+
+/*GUEST_CSS*/
+.guest-info{
+    display: flex; align-items: center;
+    justify-content: space; padding: 100px;
+}
+.guest-info img{
+    border-radius: 50%; height: 25%; 
+    padding-left: 5px; max-width: 40%;
+}
+.guest-info .guest-texts{
+    padding-left: 20px; max-width: 80%;
+}
+.guest-texts h2{
+    margin-bottom: 10px; font-size: 3rem;
+}
+/*--------------END OF GUEST CSS----------------*/
+
+
+
+
+/*Executive Summary_CSS*/
+.executive-summary-container{
+    margin-bottom: 100px; display: flex;
+}
+.executive-summary-container p{
+    padding: 20px 50px; text-align: justify;
+}
+.content{
+    height: auto; display: flex; padding-top: 0;
+}
+.colored-divider h2{text-align: left;}
+
+.left-content1, .right-content1 {
+    width: 50%; box-sizing: border-box;
+}
+
+.left-content1{
+    background-color: var(--lightest-orange);
+    width: 50%; float: left; height: auto;
+}
+.right-content1{
+    background-color: var(--second-darkest-blue); 
+    width: 50%; float: right; height: auto;
+}
+.right-content1 p{color: var(--white);}
+
+/*--------------END OF EXECUTIVE SUMMARY----------------*/
+
+
+
+
+/*Vision & Mission_CSS*/
+.mission-container, .vision-container {
+    padding: 20px; min-height: 200px; overflow: hidden;
+}
+
+.mission-content, .vision-content {
+    display: flex; flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; gap: 40px;
+}
+
+.mission-text, .vision-text {width: 100%; color: var(--white);}
+
+.mission-text h2, .vision-text h2 {
+    line-height: 1;
+    padding: 30px;
+}
+.mission-text p, .vision-text p {padding: 0 auto; margin: 0 auto; padding-bottom: 50px;}
+
+
+/*Images*/
+.mission-image {width: 90%; height: auto;}
+.vision-image {width: 80%;}
+
+.mission-image img, .vision-image img {
+    width: 100%; height: auto;
+    margin-right: 20px; border-radius: 20px;
+}
+
+
+/*Background Colors*/
+.vision-container{background: var(--cyan-blue);}
+.mission-container{background-color: var(--second-lightest-blue);}
+
+/*--------------END OF VISION & MISSION----------------*/
+
+
+
+
+/*Values_CSS*/
+.values-container{
+    background-color: var(--light-gray); 
+    padding: 20px; min-height: 200px; overflow: hidden;
+}
+.values-text{
+    text-align: justify; padding: 40px;
+    width: 100%; margin-right: 20px;
+}
+
+.values-text h2{margin-right: 100px;}
+.values-text li{margin-right: 50px;}
+
+
+/*Footer: Previous-Next_CSS*/
+.footer{display: block; padding: 10px;}
+.next-page{float: right;}
+.previous-page{float: left;}
+.previous-page a, .next-page a {font-size: 30px;}
+
+/*--------------END OF VALUES_CSS----------------*/ /*--------------END OF ABOUT US----------------*/
+
+
+
+
+
+/*Third Page: Services_CSS*/
+
+/*Consultancy Containers_CSS*/
+.services-container, .hotel-container, 
+.restaurant-container, .manpower-container, .commercial-container{
+    display: flex; width: 100%; height: auto; flex-direction: row;
+}
+
+/*Gives the settings to prepare the divs to hold the image*/
+.service-right, .hotel-left, .restaurant-right, .manpower-left, .commercial-right{
+    width: 50%; display: flex; justify-content: center;
+    align-items: center; height: auto;
+}
+
+/*Gives dimensions & style to the div that holds the text*/
+.service-left, .hotel-right, .restaurant-left, .manpower-right, .commercial-left{
+    display: flex; flex-direction: column; justify-content: center;
+    width: 50%; padding: 20px; height: auto; align-items: center;
+}
+
+
+/*CSS for images of the containers*/
+.service-image{
+    position: relative; width: 100%;
+}
+.hotel-image, .restaurant-image, .manpower-image, .commercial-image{
+    position: relative; width: 90%; margin: 3%;
+}
+
+.service-right img, .hotel-left img, .restaurant-right img, .manpower-left img, .commercial-right img{
+    max-width: 100%; height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*CSS for texts*/
+
+/*Service-text*/
+.service-left h1{
+    font-size: 65px; text-shadow: 30px 30px solid black;
+}
+
+.hotel-right h2, .restaurant-left h2, .manpower-right h2, .training-text h2, .commercial-right{
+    font-size: 30px; padding: 0px;
+}
+
+.hotel-right p, .restaurant-left p, .manpower-right p, .training-text li, .commercial-left p{
+    font-size: 25px; text-align: justify; padding: 50px;
+}
+
+.training-text h2{
+    justify-content: center; align-items: center; display: flex;
+}
+
+
+/*Background Colors for the containers*/
+.service-left, .hotel-right{background-color: var(--dark-orange);}
+.hotel-left {background: var(--dark-blue);}
+.hotel-right{background-color: var(--normal-orange);}
+.restaurant-left{background-color: var(--second-lightest-orange);}
+.restaurant-right{background-color: var(--dark-orange);}
+.manpower-left{background-color: var(--cyan-blue);}
+.manpower-right{background-color: var(--second-lightest-gray);}
+.commercial-left{background-color: var(--normal-orange);}
+.commercial-right{background-color: var(--dark-blue);}
+
+
+
+/*Training Container*/
+.training-container{
+    display: grid; grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; padding: 40px; width: 100%;
+    margin: 0 auto; background: var(--third-lightest-gray);
+}
+.training-text{
+    padding: 30px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.training-image{
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+.training-image img{
+    width: 100%; height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*Background colors for the Images*/
+.image-top, .image-bottom{padding: 10px; position: relative; height: 50%;}
+.image-top{background-color: var(--dark-blue);}
+.image-bottom{background-color: var(--dark-orange);}
+
+
+/*Ensuring the Height*/
+.image-top img, .image-bottom img{
+    object-fit: cover; 
+    margin: 0 auto; padding: 150px 10px;
+}
+
+
+
+
+/*HR Consultancy CSS*/
+.hr-container{
+    display: flex; width: 100%; height: auto; 
+    flex-direction: column;
+    background-color: var(--dark-orange);
+}
+.hr-text-top{
+    display: flex; padding: 0px; 
+    align-items: center; justify-content: center;
+}
+.hr-text p{
+    text-align: justify; padding: 40px;
+}
+.hr-image{
+    display: flex; justify-content: center; 
+    align-items: center; position: relative;
+}
+.hr-image img{
+    width: 80%; height: auto;
+}
+
+/*Special Characters inside the containers*/
+.star img{width: 120px; margin-top: 10px;}
+
+
+
+
+/*Overlay Effect on Images*/
+.overlay {
+    position: absolute; bottom: 100%; left: 0;
+    background-color: rgba(0, 140, 186, 0.8);
+    overflow: hidden; width: 100%; right: 0;
+    height: 0;transition: height 0.5s ease, bottom 0.5s ease;
+}
+
+/*Texts*/
+.text {
+    white-space: normal; color: white; 
+    text-align: center; font-size: 50px;
+    position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%);
+}
+
+.text p{font-size:20px; text-align: center;}
+
+
+
+
+/*Elements w/ Overlay*/
+.service-image:hover .overlay, .hotel-image:hover .overlay,
+.restaurant-image:hover .overlay, .manpower-image:hover .overlay,
+.commercial-image:hover .overlay, .image-top:hover .overlay,
+.image-bottom:hover .overlay, .hr-image:hover .overlay
+{bottom: 0; height: 100%;}
+
+/*--------------END OF CONSULTANCY CONTAINERS----------------*/
+
+
+
+
+
+
+
+/*Last Page: Contact Us*/
+.contact-section {
+    display: flex; justify-content: space-between;
+    padding: 20px; align-items: stretch; gap: 20px;
+}
+
+.left-content2 {
+    width: 55%; color: var(--white); padding: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0; display: flex; align-items: center;
+}
+
+.contact-info img {
+    margin-right: 10px; width: 60px;
+    height: 60px; border-radius: 50%;
+}
+
+.map {
+    margin-top: 25px; 
+}
+
+.map iframe{border-radius: 10px; height: 300px; width: 100%;}
+
+.right-content2 {
+    width: 30%; background-color: var(--gray);
+    padding: 20px; height: auto; margin-top: 50px; 
+    justify-content: space-between; margin-right: 50px;
+    border-radius: 10px; box-shadow: 5px 5px 50px #4A4949; 
+}
+
+.right-content2 h2 {text-align: center; font-size: 24px; color: #004F72;}
+
+.form-group {margin-bottom: 20px;}
+
+.form-group textarea{height: 235px;}
+
+input[type="text"], input[type="email"], 
+input[type="address"], input[type = "tel"], textarea {
+    width: 95%; padding: 10px; border-radius: 5px;
+    border: 1px solid #ccc; margin-bottom: 10px;
+}
+
+textarea {height: 100px; width: 95%;}
+
+.submit {
+    width: 100%; padding: 10px;
+    background-color: #004F72;
+    color: white; border: none;
+    border-radius: 5px; cursor: pointer;
+}
+
+.submit:hover {background-color: #003953;}
+
+.space{padding-bottom: 40px;}
+/*--------------END OF CONTACT US----------------*/
+
+
+
+
+/*Hamburger for mobile only*/
+.hamburger {
+    display: none; /* initially hidden for desktop view */
+    cursor: pointer; width: 30px; height: 30px; 
+    flex-direction: column; justify-content: space-between; 
+    align-items: center; position: fixed;
+}
+.hamburger .bar {
+    width: 100%; height: 4px; 
+    background-color: var(--white); 
+    transition: all 0.3s ease;
+}
+/*--------------END OF HAMBURGER SETTINGS----------------*/
+
+
+
+
+/*Scroll Transition: Information for the Observer*/
+.hidden{
+    opacity: 0; filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    z-index: 1;
+}
+.show{
+    opacity: 1; filter: blur(0);
+    transform: translateX(0);
+    z-index: 1;
+}
+/* Fade in Animation */
+@keyframes fadeIn {
+    from {opacity: 0;transform: translateY(20px);}
+    to {opacity: 1;transform: translateY(0);}
+    }
+    .fade-in {opacity: 0; animation: fadeIn 1s ease forwards;}
+
+    
+
+
+/*--------------START OF MEDIA QUERY----------------*/
+/*Larger Desktop: Such as 1900px*/
+@media screen and (min-width: 1600px) {
+    /*Focuses on Resizing Texts*/
+    h2{font-size: 50px;}
+    p{font-size: 40px;}
+
+    /*Header*/
+    .header h1{font-size: 30px;}
+    .header-right a{font-size: 25px;}
+
+    /*Welcome Page*/
+    .tagline{background: transparent;}
+    .tagline h2{font-size: 100px;}
+
+    /*About Us Containers*/
+    .vision-text, .mission-text{padding: 20px;}
+    .values-text li{font-size: 35px;}
+
+    /*Services Containers*/
+    .services-left h1{font-size: 75px;}
+    .hotel-right h2, .restaurant-left h2, .manpower-right h2, .training-text h2, .commercial-right h2{
+        font-size: 45px;
+    }
+    .hotel-right p, .restaurant-left p, .manpower-right p, .training-text li, .commercial-left p{
+        font-size: 30px;
+    }
+
+
+    /*Contact Us Containers*/
+    .right-content2 h2{font-size: 30px;}
+
+    input[type="text"], input[type="email"], 
+    input[type="address"], input[type = "tel"], textarea {
+        width: 88%; padding: 25px; border-radius: 5px;
+        border: 1px solid #ccc; margin-bottom: 10px;
+    }
+
+    /*Increase font-size of placeholders*/
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="address"], input[type = "tel"],
+    textarea::placeholder, .submit {
+        font-size: 23.5px;
+    }
+    
+
+    /*Footer*/
+    .previous-page a, .next-page a{font-size: 35px;}
+    
+
+}
+
+/*--------------END OF MEDIA QUERY FOR LARGE DESKTOP----------------*/
+
+
+
+
+/*Tablet Media Query: IPAD MINI*/
+@media (max-width: 768px) {
+    /*Basic Elements*/
+    h2{font-size: 45px;}
+    p{font-size: 30px;}
+
+
+    /*Header*/
+    .header {height: auto; padding: 10px; width: 100%;}
+    .header h1{font-size: 30px;}
+    .nav-link{ margin: 16px 0; z-index: 999;}
+    .nav-link a{z-index: 999;}
+
+    .logo-container img {height: 80px;width: 80px;}
+    .header-right a {font-size: 18px; line-height: 60px; padding: 10px;}
+    .header-right.active{left: 0; display: flex;  z-index: 999;}
+
+
+    /*Hide Navigation bar of desktop*/
+    .header-right{
+        display: none; flex-direction: column;
+        position: absolute; right: 0; width: 100%;
+        background-color: var(--white); 
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2)
+    }
+
+    /*Activated Header Right*/
+    .header-right {
+        display: none; flex-direction: column;
+        position: fixed; top: 100px; right: 0; /*position: relative;*/
+        background: var(--dark-blue); width: 100%;
+        z-index: 999;
+    }
+    .header-right a {
+        line-height: 60px; color: var(--white);
+        position: relative; z-index: 10000;
+    }
+    .header-right.active {display: flex;} /*Show when active*/
+
+
+    /*Hamburger*/
+    .hamburger{
+        display: flex; flex-direction: column; justify-content: space-between; cursor: pointer;
+        height: 25px; width: 30px; float: right; padding: 30px; position: sticky; z-index: 999;
+    }
+    .hamburger.active{z-index: 999;}
+    .hamburger .bar{height: 4px; background-color: var(--dark-blue); transition: all 0.3s ease; width: 45px;}
+    .hamburger.active .bar:nth-child(2){opacity: 0;}
+    .hamburger.active .bar:nth-child(1){transform: translateY(8px) rotate(45deg);}
+    .hamburger.active .bar:nth-child(3){transform: translateY(-8px) rotate(-45deg);}    
+
+
+
+
+    /*---Home Settings---*/
+    .home-container{margin-top: 50px;}
+    .tagline { 
+        text-align: left;
+        padding-top: 30px;
+        z-index:1;
+    }
+    .tagline h2{font-size: 5rem; z-index: 1;}
+    button {font-size: 1.5rem;}
+
+
+
+
+    /*---About Us Settings---*/
+    .inner-box-image img{margin: 0 auto;}
+    .center{justify-content: center; align-items: center;}
+    .center h3{top: 200px; font-size: 100px;}
+    
+    /*Guest Settings*/
+    .guest-info{flex-direction: column; margin-top: 100px;}
+    .guest-info img{width: 100%; height: auto; padding: 0;}
+    .guest-texts h2{text-align: center; padding: 0px;}
+    .guest-texts, .guest-info{max-width: 100%; padding: 0px;}
+    
+    /*Executive Summary Settings*/
+    .executive-summary-container{flex-direction: column; margin-bottom: 100px; height: auto;}
+    .content{flex-direction: column; padding-top: 20;}
+    .left-content1, .right-content1{width: 100%; padding: 20px;}
+
+    /*Vision & Mission Settings*/
+    .mission-container, .vision-container{display: flex;}
+    .mission-content{flex-direction: column;}
+    .vision-content{flex-direction: column-reverse;}
+    .mission-text h2, .vision-text h2{text-align: center;}
+    .mission-text p, .vision-text p{max-width: 80%;}
+    .mission-image, .vision-image{padding-top: 50px;}
+
+    /*Values Settings*/
+    .values-container{width: 100%; padding: 20px;}
+    .values-text{text-align: center;}
+    .values-text ul, .values-text li{text-align: justify; font-size: 30px; padding-right: 40px;}
+
+
+
+
+    /*---Services Settings---*/
+
+    /*Consultancy Containers*/
+    .service-container, .hotel-container, .restaurant-container, .manpower-container, .commercial-container{
+        flex-direction: column; justify-content: space-around;
+    }
+
+    /*Re-arranging Sides so that Images comes first then texts*/
+    .restaurant-container, .commercial-container,
+    .training-container, .services-container{flex-direction: column-reverse;}
+
+    /*Align Containers*/
+    .service-right, .hotel-left, .restaurant-right, .manpower-left, .commercial-right{
+        width: 100%; display: flex; justify-content: center; align-items: center; height: auto;
+    }
+
+    /*Adjusting the width to center the elements*/
+    .service-left, .restaurant-left, .hotel-right, .manpower-right,
+    .training-container, .commercial-left{width: 95%;}
+
+    /*Change alignment of the images*/
+    .service-right, .restaurant-right, .commercial-right{
+        width: 100%; display: flex; justify-content: center; align-items: center; height: auto;
+    }
+
+    /*Container Images*/
+    .service-image, .hotel-image, .restaurant-image, .manpower-image, .commercial-image{
+        align-items: center; justify-content: center; display: flex;
+    }
+
+    /*Disable One Image from the Training Container*/
+    .training-container{display: flex; gap: 0;}
+    .training-image{align-items: center; justify-content: center;}
+    .image-bottom{display: none;}
+    
+    
+    /*Text Containers*/
+    .service-left h1{font-size: 65px; text-shadow: 30px 30px solid black;}
+    .hotel-right h2, .restaurant-left h2, .manpower-right h2, .training-text h2, .commercial-right h2{
+        font-size: 35px; text-align: center; justify-content: center; padding: 20px;
+    }
+    .hotel-right p, .restaurant-left p, .manpower-right p, .training-text li, .commercial-left p{
+        font-size: 25px; padding: 0 auto; margin: 0 auto;
+    }
+
+
+
+
+    /*---Contact Us Settings---*/
+    .contact-section{display: grid; flex-direction: column;}
+    .left-content2{width: 90%;}
+    .leftcontent2, .right-content2{margin: 0 auto; padding: 0 auto;}
+    .right-content2{width: 88%;}
+
+
+    /*Increase font-size of placeholders*/
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="address"], input[type = "tel"],
+    textarea::placeholder {
+        font-size: 18px;
+    }
+    
+
+
+
+
+    /*---Footer Settings---*/
+    .previous-page a, .next-page a{font-size: 30px;}
+
+}
+/*--------------END OF MEDIA QUERY FOR TABLET----------------*/
+
+
+
+
+/*Phone Media Query: Iphone 14 Pro Max*/
+@media (max-width: 460px) {
+    /*Basic Elements*/
+    h2{font-size: 35px;}
+    p{font-size: 30px;}
+    .header-right.active{z-index: 999;}
+
+
+    /*Welcome Page Phone Settings*/
+    .tagline, .tagline h2{z-index: 1;}
+    .tagline h2{
+        font-size: 55px; color: var(--dark-blue); text-align: center;
+        text-shadow: 3px 3px 5px rgb(232, 225, 225);
+    }
+    .home-container{padding: 0 auto; margin: 0 auto;}
+    .getstarted{display: block; margin: 0 auto; width: fit-content;}
+
+    /*About US Phone Settings*/
+    .center img{filter: contrast(100%);}
+    .center h3{
+        text-shadow: 3px 3px 0px white; top: 175px; 
+        mix-blend-mode: normal; color: #1419acee;
+    }
+
+
+    /*Executive Summary Phone Settings*/
+    .colored-divider{padding-top: 10px;}
+    .colored-divider h2{font-size: 28px; padding: 0;}
+    .executive-summary-container p{margin: 0 auto;}
+
+
+
+    /*---Services Phone Settings---*/
+    /*Changing the Sizes of the width*/
+    .service-left{width: 95%;}
+
+
+
+    /*---Contact Us Phone Settings---*/
+    .contact-section{display: grid; flex-direction: column;}
+    .leftcontent2, .right-content2{margin: 0 auto; padding: 0 auto;}
+
+
+    /*Width*/
+    .right-content2{width: 85%;}
+    .left-content2{width: 85%;}
+    
+
+    /*Text Size Manipulation*/
+    .left-content2 p{font-size: 25px;}
+    .contact-info{padding: 0 auto;}
+    .contact-info p{font-size: 18px;}
+
+
+    /*Map Manipulation*/
+    .map iframe{width: 100%;}    
+
+
+
+    /*---Footer Phone Settings---*/
+    .previous-page a, .next-page a{font-size: 25px;}
+
+
+
+    /*---Overlay Phone Settings---*/
+    .text {width: 100%; height: auto; font-size: 35px; padding: 0 auto;}
+    .text p{font-size: 25px;}
+}
+
+/*--------------END OF MEDIA QUERY FOR PHONE----------------*/
+
+
+
+
+
+/*Media Query for JS Scrolling Animation*/
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}

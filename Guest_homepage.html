@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUEST_WEBSITE_HOME_PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url(homepage_image.png); background-position: center; background-size: cover; padding: 0;
+            background-repeat: no-repeat; background-attachment: fixed; background-position: center; box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+            <div class="logo-container">
+                <img src="guest_logo.png.png" alt="GUEST logo">
+                <h1>GUEST</h1>
+            </div>
+
+            <!--Hamburger_html-->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!--Header Navigation for desktop-->
+            <div class="header-right">
+                <a href="Guest_homepage.html" class="nav-link"><strong>Home</strong></a>
+                <a href="Guest_AboutPage.html" class="nav-link"><strong>About</strong></a>
+                <a href="Guest_services.html" class="nav-link"><strong>Services</strong></a>
+                <a href="Guest_ContactUs.html" class="nav-link"><strong>Contact Us</strong></a>
+            </div>
+    </div>
+    
+    <!-- z-index this section -->
+    <section class="home-container">
+        <div class="tagline"><h2>GIVING UNIQUE<br>EXCELLENT<br>SERVICE TOGETHER</h2></div>
+        <button onclick = "press()" class ="getstarted"><strong>Get Started</strong></button>
+    </section>
+
+    <!--External Javascript-->
+    <script src="script.js" defer></script>
+</body>
+</html>
